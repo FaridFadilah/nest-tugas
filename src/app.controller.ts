@@ -6,7 +6,7 @@ import { Response } from 'express';
 export class AppController {
   constructor(private readonly appService: AppService) {}
 
-  @Get('/')
+  @Get()
   @Render('login')
   index(){
     return
